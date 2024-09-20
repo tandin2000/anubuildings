@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+:root {
+  --color-primary: #6E0D1F;
+  --color-secondary: #5A5A5A;
+}
+
+/* App.css */
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.left-section {
+  background-color: #fff; /* Content background */
+  position: relative;
+  padding-left: 40px; /* Adjust content padding */
+}
+
+.left-section::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px; /* Red margin width */
+  height: 100%;
+  background-color: var(--color-primary); /* Dark red color */
+}
+
+.content {
+  padding-left: 40px;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-btn {
+  background-color: var(--color-primary) !important; /* Your preferred button color */
+  color: white !important;
+  border: none;
+  height: 54px;
+}
+
+.contact-btn span{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.carousel .slide{
+  height: 100svh;
+}
+
+.legend {
+  font-family: "Inter", sans-serif !important;
+  font-size: 36px !important;
+  font-weight: bold !important;
+  color: var(--color-primary) !important;
+  background-color: unset !important;
+  opacity: unset !important;
+  display: block !important; /* Ensures block display */
+}
+
+.legend-2 {
+  font-family: "Inter", sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  color: var(--color-primary) !important;
+  background-color: unset !important;
+  opacity: unset !important;
+  display: block !important; /* Ensures block display */
+}
+
+.carousel .control-dots {
+  text-align: right !important;
+}
+.control-dots .selected{
+  background-color: var(--color-primary) !important;
+  width: 60px !important;
+  border-radius: 4px !important;
+}
+
+.control-dots .dot{
+  border: 2px solid var(--color-primary) !important;
+  box-shadow: unset !important;
+}
+
+
+.nav-item a{
+  font-size: 24px;
+  color: var(--color-primary) !important;
+}
+
+.text-subtitle{
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.content h1{
+  font-family: "Inter", sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+.content p{
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--color-secondary);
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-list {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary);
+  margin-right: -10px;
+  z-index: 1;
+}
+
+.avatar:nth-child(2) {
+  z-index: 2;
+}
+
+.avatar:nth-child(3) {
+  z-index: 3;
+}
+
+.reviews-count {
+  width: 36px;
+  height: 36px;
+  background-color: #7B2A3B; /* Dark red */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 14px;
+  /* font-weight: bold; */
+  z-index: 4;
+}
+
+.reviews-text {
+  font-size: 12px;
+  color: #777;
+  /* margin-top: 8px; */
+}
+
+/* specialization */
+
+.left-half {
+  background-color: #f5f5f5; /* Light background */
+}
+
+.right-half {
+  background-color: #ffffff; /* White background */
+  height: 100svh;
+}
+
+/* Right side content */
+.content-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.content-description {
+  font-size: 18px;
+  color: var(--color-secondary);
+  margin-bottom: 24px;
+}
+
+.specialization {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specialization-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.specialization-icon {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+.specialization-text h5 {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.specialization-text p {
+  font-size: 16px;
+  color: var(--color-secondary);
+}

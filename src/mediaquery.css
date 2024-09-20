@@ -1,0 +1,395 @@
+@media (max-width: 576px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100svh;
+    }
+
+    .text-subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content .hero-text {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-secondary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .nav-item a {
+        text-decoration: none;
+        /* Remove underline */
+        font-family: "Inter", sans-serif !important;
+        font-size: 12px !important;
+        font-weight: 400;
+        color: var(--color-primary) !important;
+        padding: 20px 8px 20px 0;
+        display: block;
+        /* Ensure clickable area extends over the padding */
+        transition: background-color 0.3s ease;
+        /* Smooth background transition */
+      }
+    .section-2{
+        height: 100svh;
+    }
+    .stat {
+        font-size: 60px;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        height: 14svh;
+        color: var(--color-primary);
+      }
+      
+      .layer-background-color{
+        background-color: var(--color-background);
+      }
+      
+      .contact-item .key{
+        text-align: left;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .contact-item .value{
+        text-align: right;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+}
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100svh;
+    }
+
+    .text-subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content .hero-text {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-secondary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .section-2 .content{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .stat {
+        font-size: 80px;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        height: 14svh;
+        color: var(--color-primary);
+      }
+      
+      .layer-background-color{
+        background-color: var(--color-background);
+      }
+      
+      .contact-item .key{
+        text-align: left;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      
+      .contact-item .value{
+        text-align: right;
+        font-size: 16px;
+        font-weight: bold;
+      }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100svh;
+    }
+    .text-subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content .hero-text {
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: var(--color-secondary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .stat {
+        font-size: 80px;
+    }
+    
+
+    
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100svh;
+    }
+
+    .left-sider,
+    .right-sider {
+        width: 50%;
+    }
+
+
+    .left-sider {
+        position: fixed;
+        height: 100svh;
+    }
+
+    .right-sider {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+
+    }
+
+    .content .hero-text {
+        width: 80%;
+    }
+
+    .stat {
+        font-size: 80px;
+    }
+
+    .text-subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 12px;
+        margin-bottom: 0;
+    }
+
+    .content h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 46px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 14px;
+        margin-bottom: 0;
+    }
+
+    .content .hero-text {
+        font-family: "Inter", sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        color: var(--color-secondary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .section-2{
+        margin-top: 100%;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        height: 14svh;
+        color: var(--color-primary);
+      }
+      
+      .layer-background-color{
+        background-color: var(--color-background);
+      }
+      
+      .contact-item .key{
+        text-align: left;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      
+      .contact-item .value{
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+      }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .page-wrapper {
+        display: flex;
+        flex-direction: row;
+        height: 100svh;
+    }
+
+    .left-sider,
+    .right-sider {
+        width: 50%;
+    }
+
+
+    .left-sider {
+        position: fixed;
+        height: 100svh;
+    }
+
+    .right-sider {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+
+    }
+
+    .content .hero-text {
+        width: 90%;
+    }
+
+    .stat {
+        font-size: 100px;
+    }
+
+    .text-subtitle {
+        font-family: "Inter", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content h1 {
+        font-family: "Inter", sans-serif;
+        font-size: 52px;
+        font-weight: bold;
+        color: var(--color-primary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+
+    .content .hero-text {
+        font-family: "Inter", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        color: var(--color-secondary);
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+    .section-2{
+        height: 100svh;
+    }
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+        padding: 16px;
+        height: 14svh;
+        color: var(--color-primary);
+      }
+      
+      .layer-background-color{
+        background-color: var(--color-background);
+      }
+      
+      .contact-item .key{
+        text-align: left;
+        font-size: 50px;
+        font-weight: bold;
+      }
+      
+      .contact-item .value{
+        text-align: right;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+}
