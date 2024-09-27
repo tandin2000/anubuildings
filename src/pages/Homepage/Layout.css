@@ -1,0 +1,279 @@
+/* top-bar */
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
+    color: var(--foundation-light);
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;
+}
+
+.topbar-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Navbar styles */
+.nav-bar-wrapper {
+    background-color: var(--foundation-red-light);
+    border-radius: 160px;
+    padding: 0 16px;
+    position: fixed;
+    top: 42px;
+    width: calc(100% - 32px);
+    z-index: 1000; /* Keep the navbar on top of the carousel */
+    margin: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.nav-bar-logo{
+    height: 80px;
+    width: 80px;
+}
+
+/* Carousel */
+.hero-carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full screen height */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100vh; /* Keep the height if you want a specific size */
+    object-fit: cover; /* This will maintain the aspect ratio and cover the area */
+    object-position: top; /* Align the image to the top */
+}
+
+.custom-toggler {
+    background: transparent; /* Make background transparent */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer */
+    color: #FF4B00; /* Change color of the icon to match your theme */
+}
+
+.custom-toggler .bx {
+    font-size: 1.5rem; /* Adjust icon size */
+}
+
+
+
+/* Text overlay */
+.carousel-overlay {
+    position: absolute;
+    bottom: 20%;
+    left: 40px;
+    text-align: left;
+}
+
+
+.carousel-overlay p {
+    font-weight: 400;
+    font-size: 64px;
+}
+
+.carousel-overlay span {
+    color: var(--color-accent); /* Highlight 'Award Winning' in accent color */
+}
+
+/* Custom carousel controls */
+.carousel-custom-controls {
+    position: absolute;
+    bottom: 20%;
+    right: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px; /* Space between arrows */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(255, 75, 0, 0.8); /* Primary color on hover */
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 24px; /* Adjust icon size */
+}
+
+.section-1{
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
+    padding: 4px 36px ;
+    border-radius: 16px;
+    margin-top: -80px;
+    z-index: 3;
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.image-section-1{
+
+}
+.para-section-1{
+    font-size: 20px;
+    color: var(--foundation-light);
+}
+
+.section-2{
+}
+
+.section-2 .header{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 40px;
+    justify-content: space-between;
+}
+
+.section-2 .header .title{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--foundation-dark);
+    line-height: 1.2;
+    
+}
+
+.section-2 .header .content{
+    font-size: 16px;
+    color: var(--foundation-dark);
+    max-width: 400px;
+}
+
+.section-2 .card-container{
+    margin: 0 40px;
+}
+
+.section-3{
+}
+
+.section-3 .header{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 40px;
+    justify-content: space-between;
+}
+
+.section-3 .header .title{
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--foundation-dark);
+    line-height: 1.2;
+    
+}
+
+.section-3 .header .content{
+    font-size: 16px;
+    color: var(--foundation-dark);
+    max-width: 400px;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-bar-wrapper {
+        border-radius: 20px;
+        padding: 0;
+        width: calc(100% - 32px);
+        margin: 16px;
+    }
+
+    .nav-bar-logo{
+        height: 60px;
+        width: 60px;
+    }
+
+    .mobile-collapse {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .mobile-collapse .me-auto {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .bottom-items {
+        margin-top: auto;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .contact-number {
+        margin-bottom: 1rem;
+    }
+
+    .primary-btn {
+        margin-bottom: 1rem;
+    }
+
+    .carousel-overlay {
+        font-size: 1.8rem;
+        bottom: 20%;
+    }
+
+    .carousel-overlay p {
+        font-size: 32px;
+    }
+    .section-1{
+        display: flex;
+        /* flex-wrap: wrap; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-primary);
+        padding: 4px 36px ;
+        border-radius: 16px;
+        margin-top: -80px;
+        z-index: 3;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .section-2 .header{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px;
+        justify-content: space-between;
+    }
+    .section-3 .header{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px;
+        justify-content: space-between;
+    }
+    .section-2 .card-container{
+        margin: 0 20px;
+    }
+    
+}

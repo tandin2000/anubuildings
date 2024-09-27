@@ -1,0 +1,40 @@
+.faq-section {
+    background-color: #FCEDE6;
+    padding: 40px;
+    /* border-radius: 10px; */
+}
+
+.faq-section .card{
+    border-bottom: 2px solid #121212;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.faq-question {
+    border-bottom: 1px solid #D1C1B1;
+    color: #2B2B2B;
+}
+
+.faq-question:hover{
+    /* border-bottom: 1px solid #D1C1B1; */
+    color: #2B2B2B;
+}
+
+.faq-answer {
+    font-size: 16px;
+    color: #666;
+    margin-top: -1px;
+    background-color: var(--foundation-red-light);
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .faq-section {
+        background-color: #FCEDE6;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+}
