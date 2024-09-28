@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     flex-direction: row;
-    background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
+    background-color: var(--color-primary);
     padding: 40px;
     gap: 32px;
     /* justify-content: ; */
