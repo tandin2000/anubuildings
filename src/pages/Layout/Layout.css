@@ -32,6 +32,10 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
+.nav-center{
+    margin-left: auto;
+}
+
 .nav-bar-logo{
     height: 80px;
     width: 80px;
@@ -148,6 +152,9 @@
         padding: 0;
         width: calc(100% - 32px);
         margin: 16px;
+    }
+    .nav-center{
+        margin-left: unset;
     }
 
     .nav-bar-logo{

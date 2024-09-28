@@ -51,7 +51,7 @@ function Layout() {
                         <i className='bx bx-menu-alt-right'></i>
                     </NavbarToggler>
                     <Collapse isOpen={isOpen} navbar className="mobile-collapse">
-                        <Nav className="me-auto" navbar>
+                        <Nav className="me-auto nav-center" navbar >
                             <NavItem>
                                 <NavLink
                                     tag={Link}
