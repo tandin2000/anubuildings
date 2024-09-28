@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Modal, ModalHeader, ModalBody, ModalFooter, Button } from 'reactstrap'; // Assuming you're using Reactstrap for Bootstrap components
 import './MasonryGrid.css'; // Custom styles
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 import service1 from '../../images/service1.png';
 import service2 from '../../images/service2.png';
@@ -83,22 +84,26 @@ const MasonryGrid = () => {
 
             {/* Modal Implementation */}
             <Modal isOpen={modal} toggle={toggleModal} className="modal-dialog-centered modal-lg">
-                <ModalHeader toggle={toggleModal}>
-                    <span style={{ flex: 1 }}>{activeCard?.text}</span>
+                {/* <ModalHeader toggle={toggleModal}>
                     <box-icon type='solid' name='x-square' onClick={toggleModal} style={{ cursor: 'pointer' }}></box-icon>
-                </ModalHeader>
+                </ModalHeader> */}
                 <ModalBody>
                     {activeCard && (
                         <>
-                            <img src={activeCard.image} alt={activeCard.text} style={{ width: '100%', height: 350, borderRadius: 8, objectFit:'cover', objectPosition:'top' }} />
+                            <ReactCompareSlider
+                            style={{ width: '100%', height: 350, borderRadius: 8, objectFit:'cover', objectPosition:'top' }}
+                                itemOne={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
+                                itemTwo={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
+                            />
+                    <p className='mt-3' style={{ fontSize:16, fontWeight: 800 }}>{activeCard?.text}</p>
                             <p style={{ marginTop: 10 }}>{activeCard.description}</p>
                         </>
                     )}
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" outline className="primary-btn" style={{ margin: '0 auto' }}>
-                    Book Now <i class='bx bx-right-arrow-alt' ></i>
-                        </Button>
+                        Book Now <i class='bx bx-right-arrow-alt' ></i>
+                    </Button>
                 </ModalFooter>
             </Modal>
         </>
