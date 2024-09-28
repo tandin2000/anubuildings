@@ -11,7 +11,7 @@ import about4 from '../../images/Group 10.png'
 export default function AboutUs() {
     return (
         <>
-            <div className='section-5' style={{ marginTop: 160, marginBottom:20 }}>
+            <div className='section-5' style={{ marginTop: 60, marginBottom:20 }}>
                 <div className='header'>
                     <div className='title'>
                         About Us

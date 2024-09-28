@@ -67,7 +67,7 @@ const ServiceRequestForm = () => {
     };
 
     return (
-        <div className="service-request-form" style={{ marginTop: 160 }}>
+        <div className="service-request-form" style={{ marginTop: 120 }}>
             <h2>New Service Request</h2>
             <div className='content'>
                         Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.

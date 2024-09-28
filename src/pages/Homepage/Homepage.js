@@ -150,7 +150,7 @@ function Homepage() {
             <div className='section-2'>
                 <div className='header'>
                     <div className='title'>
-                        Our Cleaning <br /> Services
+                        Our Cleaning Services
                     </div>
                     <div className='content'>
                         Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.
