@@ -18,11 +18,16 @@ import Homepage from '../Homepage/Homepage';
 import MasonryGrid from '../Services/Services';
 import ServiceRequestForm from '../ServiceRequest/ServiceRequest';
 import Footer from '../Component/Footer';
+import AboutUs from '../AboutUs/AboutUs';
 
 function Layout() {
     const [isOpen, setIsOpen] = useState(false);
+    const [activeLink, setActiveLink] = useState('/'); // Default active link
 
     const toggle = () => setIsOpen(!isOpen);
+    const handleNavClick = (path) => {
+        setActiveLink(path); // Set the clicked link as active
+    };
 
     return (
         <Router>
@@ -48,13 +53,28 @@ function Layout() {
                     <Collapse isOpen={isOpen} navbar className="mobile-collapse">
                         <Nav className="me-auto" navbar>
                             <NavItem>
-                                <NavLink tag={Link} to="/">Home</NavLink>
+                                <NavLink
+                                    tag={Link}
+                                    to="/"
+                                    onClick={() => handleNavClick('/')}
+                                    className={activeLink === '/' ? 'active' : ''}
+                                >Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/services">Services</NavLink>
+                                <NavLink
+                                    tag={Link}
+                                    to="/services"
+                                    onClick={() => handleNavClick('/services')}
+                                    className={activeLink === '/services' ? 'active' : ''}
+                                >Services</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} to="/about-us">About Us</NavLink>
+                                <NavLink
+                                    tag={Link}
+                                    to="/about-us"
+                                    onClick={() => handleNavClick('/about-us')}
+                                    className={activeLink === '/about-us' ? 'active' : ''}
+                                >About Us</NavLink>
                             </NavItem>
                         </Nav>
                         <div className="bottom-items">
@@ -73,6 +93,7 @@ function Layout() {
                     <Route path="/" element={<Homepage />} />
                     <Route path="/services" element={<MasonryGrid />} />
                     <Route path="/get-quote" element={<ServiceRequestForm />} />
+                    <Route path="/about-us" element={<AboutUs />} />
                     {/* Add other routes as needed */}
                 </Routes>
 

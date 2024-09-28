@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import AwardImg from "../../images/award.png"
 export default function Footer() {
   return (
     <div className='footer'>
@@ -24,15 +25,19 @@ export default function Footer() {
             <span className='title '>CONTACT</span>
             <span><i class='bx bxs-phone' ></i> (647) 773-4356</span>
             <span><i class='bx bxs-envelope' ></i> info@anubuildingservices.com</span>
-            <span><i class='bx bxs-map-pin' ></i> 5215, Finch Ave E Unit: 153,Scarborough, Ontario </span>
+            <span><i class='bx bxs-map-pin' ></i> 5215, Finch Ave E Unit: 153,<br/> &nbsp;&nbsp;&nbsp; Scarborough, Ontario </span>
           </div>
           <div className='contact'>
-            <span className='title '>Social Media</span>
+            <span className='title '>SOCIAL MEDIA</span>
             <div className='social-icons'>
               <a href='' style={{ marginRight: 16 }}><i class='bx bxl-facebook-circle bx-sm'></i></a>
               <a href='' style={{ marginRight: 16 }}><i class='bx bxl-instagram-alt bx-sm' ></i></a>
               <a href='' style={{ marginRight: 16 }}><i class='bx bxl-tiktok bx-sm' ></i></a>
             </div><br />
+          </div>
+          <div className='contact' style={{justifyContent:'center', textAlign:'center'}}>
+            <span className='title '>WE ACHEIVED</span>
+            <img src={AwardImg} height={147} width={123}/>
           </div>
         </div>
         <div>

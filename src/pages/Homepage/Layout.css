@@ -6,7 +6,7 @@
     background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
     color: var(--foundation-light);
     padding: 8px;
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     z-index: 1001;
@@ -25,7 +25,7 @@
     border-radius: 160px;
     padding: 0 16px;
     position: fixed;
-    top: 42px;
+    top: 32px;
     width: calc(100% - 32px);
     z-index: 1000; /* Keep the navbar on top of the carousel */
     margin: 16px;
@@ -41,12 +41,12 @@
 .hero-carousel {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 110vh; /* Full screen height */
 }
 
 .carousel-image {
     width: 100%;
-    height: 100vh; /* Keep the height if you want a specific size */
+    height: 110vh; /* Keep the height if you want a specific size */
     object-fit: cover; /* This will maintain the aspect ratio and cover the area */
     object-position: top; /* Align the image to the top */
 }
@@ -68,7 +68,7 @@
 /* Text overlay */
 .carousel-overlay {
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     left: 40px;
     text-align: left;
 }
@@ -152,7 +152,7 @@
 }
 
 .section-2 .header .title{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 900;
     color: var(--foundation-dark);
     line-height: 1.2;
@@ -162,7 +162,7 @@
 .section-2 .header .content{
     font-size: 16px;
     color: var(--foundation-dark);
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .section-2 .card-container{
@@ -180,7 +180,7 @@
 }
 
 .section-3 .header .title{
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 900;
     color: var(--foundation-dark);
     line-height: 1.2;
@@ -190,7 +190,36 @@
 .section-3 .header .content{
     font-size: 16px;
     color: var(--foundation-dark);
-    max-width: 400px;
+    max-width: 600px;
+}
+
+
+.section-5{
+}
+
+.section-5 .header{
+    display: flex;
+    flex-direction: row;
+    padding: 80px 40px;
+    justify-content: space-between;
+}
+
+.section-5 .header .title{
+    font-size: 42px;
+    font-weight: 900;
+    color: var(--foundation-dark);
+    line-height: 1.2;
+    
+}
+
+.section-5 .header .content{
+    font-size: 16px;
+    color: var(--foundation-dark);
+    max-width: 800px;
+}
+
+.section-5 .card-container{
+    margin: 0 40px;
 }
 
 
@@ -274,6 +303,12 @@
     }
     .section-2 .card-container{
         margin: 0 20px;
+    }
+    .section-5 .header{
+        display: flex;
+        flex-direction: column;
+        padding: 80px 40px;
+        justify-content: space-between;
     }
     
 }

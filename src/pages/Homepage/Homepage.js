@@ -38,15 +38,15 @@ const items = [
     {
         src: slide1,
         altText: 'Slide 1',
-        caption: 'Professional Cleaning From',
-        description: 'an Award Winning Service Provider',
+        caption: 'Excelent Services',
+        description: 'From a Quality Service Provider',
         buttonText: 'View More',
-        buttonLink: '/view-more-1' // Optional link for the button
+        buttonLink: '/services' // Optional link for the button
     },
     {
         src: slide2,
         altText: 'Slide 2',
-        caption: 'Quality Building Services',
+        caption: 'Professional Cleaning From',
         description: 'an Award Winning Service Provider'
         // No button on this slide
     },
@@ -54,9 +54,9 @@ const items = [
         src: slide3,
         altText: 'Slide 3',
         caption: 'Affordable and Reliable',
-        description: 'an Award Winning Service Provider',
+        description: 'Service Provider',
         buttonText: 'Explore Now',
-        buttonLink: '/explore-now' // Another link for the button
+        buttonLink: '/get-quote' // Another link for the button
     }
 ];
 
@@ -93,13 +93,15 @@ function Homepage() {
                 key={item.src}
             >
                 <img src={item.src} alt={item.altText} className="carousel-image" />
-                <div className="carousel-overlay">
-                    <p style={{ lineHeight: 1.2, fontWeight: 900, color: "white" }}>{item.caption}
-                        <br />
+                <div className="carousel-overlay" style={{maxWidth:920}}>
+                    <p style={{ lineHeight: 1.2, fontWeight: 700, color: "white" }}>{item.caption} &nbsp;
                         <span style={{ 
                              background: "linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%)",
                              WebkitBackgroundClip: "text",
-                             WebkitTextFillColor: "transparent"
+                             WebkitTextFillColor: "transparent",
+                             fontWeight: 700,
+                             fontStyle: "italic",
+
                          }}>{item.description}</span>
                     </p>
                     {/* Conditionally render the button */}
@@ -168,7 +170,7 @@ function Homepage() {
                                     src={frame12}
                                     style={{
                                         maxHeight: 360,
-                                        borderRadius:16,
+                                        // borderRadius:16,
                                         objectFit:'cover'
                                     }}
                                     width="100%"
@@ -193,7 +195,7 @@ function Homepage() {
                                     src={frame17}
                                     style={{
                                         maxHeight: 360,
-                                        borderRadius:16,
+                                        // borderRadius:16,
                                         objectFit:'cover'
                                     }}
                                     width="100%"
@@ -218,7 +220,7 @@ function Homepage() {
                                     src={frame18}
                                     style={{
                                         maxHeight: 360,
-                                        borderRadius:16,
+                                        // borderRadius:16,
                                         objectFit:'cover'
                                     }}
                                     width="100%"
@@ -249,6 +251,7 @@ function Homepage() {
                 </div>
             </div>
             <FAQSection />
+            
         </div>
     );
 }

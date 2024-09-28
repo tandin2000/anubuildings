@@ -45,12 +45,12 @@ function FAQSection() {
     return (
         <div className="faq-section">
             {faqData.map((faq, index) => (
-                <Card key={index} className="faq-item mb-2">
+                <Card key={index} className="faq-item mb-2" style={{borderRadius:0}}>
                     <Button
                         onClick={() => toggle(index)}
                         className="faq-question p-3 text-left"
                         style={{
-                            backgroundColor: '#FFEDE6',
+                            backgroundColor: '#E6F6FF',
                             border: 'none',
                             width: '100%',
                             fontSize: '18px',

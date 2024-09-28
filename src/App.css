@@ -44,15 +44,26 @@ body {
   border-top: unset;
 }
 
-.form-select{
+.form-select, .form-control, .form-control:focus, .form-select:focus{
   background-color: var(--foundation-red-light);
   border-color: #121212;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-width: 2px;
+  border-radius: 0;
+  box-shadow: none;
 }
-.form-control{
-  border-color: #121212;
-  background-color: var(--foundation-red-light);
-}
-
 .form-control::file-selector-button{
   background-color: var(--color-primary);
+}
+
+/* Custom CSS to change active nav item text color to red */
+.nav-link.active {
+  color: var(--color-primary)!important; 
+}
+
+/* Optional: Add hover effect */
+.nav-link:hover {
+  color: var(--color-primary);
 }
