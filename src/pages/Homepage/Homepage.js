@@ -25,7 +25,7 @@ import './Layout.css';  // Add custom CSS for layout
 
 // Images for the carousel
 import slide1 from '../../images/Hero-banner-1-anu.png';
-import slide2 from '../../images/Hero-banner-1-anu.png';
+import slide2 from '../../images/Hero-banner-2-anu.png';
 import slide3 from '../../images/Hero-banner-1-anu.png';
 import frame51 from '../../images/Frame51.png'
 import frame12 from '../../images/Frame 12.png'

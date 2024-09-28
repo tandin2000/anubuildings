@@ -91,11 +91,11 @@ const MasonryGrid = () => {
                     {activeCard && (
                         <>
                             <ReactCompareSlider
-                            style={{ width: '100%', height: 350, borderRadius: 8, objectFit:'cover', objectPosition:'top' }}
+                                style={{ width: '100%', height: 350, borderRadius: 8, objectFit: 'cover', objectPosition: 'top' }}
                                 itemOne={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
                                 itemTwo={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
                             />
-                    <p className='mt-3' style={{ fontSize:16, fontWeight: 800 }}>{activeCard?.text}</p>
+                            <p className='mt-3' style={{ fontSize: 16, fontWeight: 800 }}>{activeCard?.text}</p>
                             <p style={{ marginTop: 10 }}>{activeCard.description}</p>
                         </>
                     )}
