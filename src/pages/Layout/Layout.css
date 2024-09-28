@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
+    background-color: var(--color-primary);
     color: var(--foundation-light);
     padding: 8px;
     position: fixed;
@@ -61,7 +61,7 @@
     border: none; /* Remove border */
     outline: none; /* Remove outline */
     cursor: pointer; /* Change cursor to pointer */
-    color: #FF4B00; /* Change color of the icon to match your theme */
+    color: var(--color-primary); /* Change color of the icon to match your theme */
 }
 
 .custom-toggler .bx {
@@ -114,7 +114,7 @@
 
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
-    background-color: rgba(255, 75, 0, 0.8); /* Primary color on hover */
+    background-color: var(--color-primary); /* Primary color on hover */
 }
 
 .carousel-control-prev i,
@@ -128,7 +128,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%);
+    background-color: var(--color-primary);
     padding: 4px 36px ;
     border-radius: 16px;
     margin-top: -80px;
