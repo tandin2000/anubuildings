@@ -95,10 +95,9 @@ function Homepage() {
                 <img src={item.src} alt={item.altText} className="carousel-image" />
                 <div className="carousel-overlay" style={{maxWidth:920}}>
                     <p style={{ lineHeight: 1.2, fontWeight: 700, color: "white" }}>{item.caption} &nbsp;
-                        <span style={{ 
-                             background: "linear-gradient(60deg, rgba(255,75,0,1) 0%, rgba(253,29,29,1) 50%, rgba(181,63,14,1) 100%)",
-                             WebkitBackgroundClip: "text",
-                             WebkitTextFillColor: "transparent",
+                        <span
+                        className='text-primary'
+                         style={{ 
                              fontWeight: 700,
                              fontStyle: "italic",
 
