@@ -50,7 +50,7 @@ function FAQSection() {
                         onClick={() => toggle(index)}
                         className="faq-question p-3 text-left"
                         style={{
-                            backgroundColor: '#E6F6FF',
+                            backgroundColor: '#ffffff',
                             border: 'none',
                             width: '100%',
                             fontSize: '18px',

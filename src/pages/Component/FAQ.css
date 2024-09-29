@@ -1,5 +1,5 @@
 .faq-section {
-    background-color: #E6F6FF;
+    background-color: var(--foundation-red-light);
     padding: 40px;
     /* border-radius: 10px; */
 }

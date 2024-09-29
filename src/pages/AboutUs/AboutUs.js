@@ -13,10 +13,10 @@ export default function AboutUs() {
             <div className='section-5' style={{ marginBottom: 20 }}>
                 <div className='section-2'>
                     <div className='header new-service' style={{ display: 'flex', flexDirection: 'column', fontFamily: 'Sora' }}>
-                        <div className='title text-light'>
+                        <div className='title text-light text-center'>
                             About Us
                         </div>
-                        <div className='content text-light' style={{ paddingBottom: 120 }}>
+                        <div className='content text-light text-center' style={{ paddingBottom: 120, maxWidth:'unset' }}>
                             At Anu Building Services Inc. our first priority is the satisfaction of our customers. Anu Building Services Inc. provides maintenance and cleaning service in a professional and detailed manner. We provide janitorial service and maintenance for condominiums, apartments, commercial buildings, retail stores, etc. We specialize in carpet steam wash, waxing floors, and underground parking lot power wash. We offer detailed cleaning services as well as full-time employees for maintenance. Since 2012, we have expanded and made many long-term relationships. Our customers’ satisfaction has remained one of our biggest achievements. We continue to build good relationships and continue our long-term relationship with our existing clients.
                         </div>
                     </div>

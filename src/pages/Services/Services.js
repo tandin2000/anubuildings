@@ -29,7 +29,7 @@ const MasonryGrid = () => {
         { id: 8, image: service8, text: 'Underground Parking Lot Power Wash and Clean', description: 'Description for Underground Parking Lot Power Wash and Clean', icon: "bx bx-car" },
         { id: 9, image: service9, text: 'Janitorial Service and Maintenance', description: 'Description for Janitorial Service and Maintenance', icon: "bx bx-mop" },
     ];
-    
+
 
     const toggleModal = () => setModal(!modal);
 
@@ -42,11 +42,13 @@ const MasonryGrid = () => {
         <>
             <div className='section-2'>
                 <div className='header new-service' style={{ display: 'flex', flexDirection: 'column', fontFamily: 'Sora' }}>
-                    <div className='title text-light'>
-                        Our Cleaning <br /> Services
-                    </div>
-                    <div className='content text-light' style={{ paddingBottom: 120 }}>
-                        Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.
+                    <div class="container-2">
+                        <p class="text-large mx-5">
+                            Our Cleaning <br /> Services
+                        </p>
+                        <div class="text-small">
+                            Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,8 +102,8 @@ const MasonryGrid = () => {
                                 itemOne={<ReactCompareSliderImage src={beforeImage} srcSet={beforeImage} alt={activeCard.text} />}
                                 itemTwo={<ReactCompareSliderImage src={afterImage} srcSet={afterImage} alt={activeCard.text} />}
                             />
-                            <h2 className='mt-3' style={{ fontSize: 24, fontWeight: 800, textAlign:'center' }}>{activeCard?.text}</h2>
-                            <p style={{ marginTop: 10, textAlign:'center' }}>{activeCard.description}</p>
+                            <h2 className='mt-3' style={{ fontSize: 24, fontWeight: 800, textAlign: 'center' }}>{activeCard?.text}</h2>
+                            <p style={{ marginTop: 10, textAlign: 'center' }}>{activeCard.description}</p>
                         </>
                     )}
                 </ModalBody>

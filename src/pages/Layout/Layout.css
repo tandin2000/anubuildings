@@ -24,12 +24,13 @@
     background-color: var(--navbar-color);
     color: var(--foundation-light);
     /* border-radius: 160px; */
+    border-bottom: 2px solid white;
     padding: 0 64px;
     position: sticky;
     top: 0px;
     /* width: calc(100% - 32px); */
     z-index: 1000; /* Keep the navbar on top of the carousel */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-shadow: 0 4px 20px rgba(180, 180, 180, 0.1); /* Soft shadow */
 }
 
 .nav-center{

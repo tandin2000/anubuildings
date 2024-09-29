@@ -141,8 +141,9 @@ function Homepage() {
                         </div>
                     </div>
                 </div>
+            </div>
                 <div className="video-container">
-                    {/* <ReactPlayer
+                    <ReactPlayer
                         className="react-player"
                         light={true}
                         url='https://www.youtube.com/watch?v=yMJCcKyorfs&ab_channel=UliaArt'
@@ -151,13 +152,9 @@ function Homepage() {
                             minHeight:'540px',
                             borderRadius:240
                         }}
-                    /> */}
-                    <img src={slide5} className="image-slide" />
+                    />
+                    {/* <img src={slide5} className="image-slide" /> */}
                 </div>
-
-
-
-            </div>
             <div className='section-1'>
                 <div className='image-section-1'>
                     <img src={frame51} height="200px" />
@@ -167,20 +164,20 @@ function Homepage() {
                 </div>
             </div>
             <div className='section-2'>
-                <div className='header'>
-                    <div className='text-container'>
-                    <div className='title'>
+                <div class="container-2">
+                    <p class="text-large mx-5" style={{ color: "black" }}>
                         Our Cleaning Services
-                    </div>
-                    <div className='content'>
+                    </p>
+                    <div class="text-small" style={{ color: "black" }}>
                         Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.
+
                         <br />
-                        <br />
+                        <div className='button-container'>
+                            <Button color="primary" outline className="light-btn py-3 px-5 mt-3">
+                                SERVICES
+                            </Button>
+                        </div>
                     </div>
-                    </div>
-                    <Button color="primary" style={{maxHeight:54}} outline className="primary-btn py-3 px-5">
-                        View <i class='bx bx-right-arrow-alt' ></i>
-                    </Button>
                 </div>
                 <div className='row card-container'>
                     <div className='col-lg-3 col-md-3 col-sm-12 my-2'>
@@ -299,11 +296,12 @@ function Homepage() {
                 </div>
             </div>
             <div className='section-3'>
-                <div className='header'>
-                    <div className='title'>
+                <div class="container-2">
+                    <p class="text-large mx-5" style={{ color: "black" }}>
                         FAQs
-                    </div>
-                    <div className='content'>
+
+                    </p>
+                    <div class="text-small" style={{ color: "black" }}>
                         Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that.
                     </div>
                 </div>

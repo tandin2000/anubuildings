@@ -77,6 +77,8 @@ body {
 /* Custom CSS to change active nav item text color to red */
 .nav-link.active {
   color: var(--foundation-light)!important; 
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 /* Optional: Add hover effect */

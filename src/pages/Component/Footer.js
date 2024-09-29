@@ -13,14 +13,11 @@ export default function Footer() {
           allowFullScreen=""
           loading="lazy"
         ></iframe>
+          <div className='contact' style={{justifyContent:'center', textAlign:'center'}}>
+            <img src={AwardImg} height={250} width={220}/>
+          </div>
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent:'space-between' }}>
         <div className='footer-content-wrapper'>
-          <div className='menu'>
-            <span className='title '>MENU</span>
-            <a href=''> <i class='bx bxs-right-top-arrow-circle'></i> Home</a>
-            <a href=''> <i class='bx bxs-right-top-arrow-circle'></i> Service</a>
-            <a href=''> <i class='bx bxs-right-top-arrow-circle'></i> About Us</a>
-          </div>
           <div className='contact'>
             <span className='title '>CONTACT</span>
             <span><i class='bx bxs-phone' ></i> (647) 773-4356</span>
@@ -35,16 +32,14 @@ export default function Footer() {
               <a href='' style={{ marginRight: 16 }}><i class='bx bxl-tiktok bx-sm' ></i></a>
             </div><br />
           </div>
-          <div className='contact' style={{justifyContent:'center', textAlign:'center'}}>
-            <span className='title '>WE ACHEIVED</span>
-            <img src={AwardImg} height={147} width={123}/>
-          </div>
         </div>
         <div>
-          <hr color='white'/>
+          <hr  style={{color:'white'}}/>
           <span style={{color:'white'}}>Anu Building Services © 2024</span>
+          <br/>
+          <span style={{color:'white', fontSize:14}}>Developed and Maintained by OrandBT</span>
         </div>
       </div>
-    </div>
-  )
+      </div>
+      )
 }
