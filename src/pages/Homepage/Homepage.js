@@ -94,12 +94,14 @@ function Homepage() {
             >
                 <img src={item.src} alt={item.altText} className="carousel-image" />
                 <div className="carousel-overlay" style={{maxWidth:920}}>
-                    <p style={{ lineHeight: 1.2, fontWeight: 700, color: "white" }}>{item.caption} &nbsp;
+                    <p style={{ lineHeight: 1.2, fontWeight: 700, color: "white", fontFamily:"Sora" }}>{item.caption} &nbsp;
                         <span
                         className='text-primary'
                          style={{ 
                              fontWeight: 700,
                              fontStyle: "italic",
+                             textDecoration: "underline"
+                             
 
                          }}>{item.description}</span>
                     </p>
