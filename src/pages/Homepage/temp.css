@@ -41,10 +41,8 @@
   }
   
   .react-player {
-    max-width: 100%;
-    max-height: 100%;
-    width: 90vw; /* Increase the width to 90% of the viewport */
-    height: auto;
+    min-height: 540px;
+    width: 80% !important;
   }
 
   .image-slide {
@@ -80,6 +78,7 @@
     background-color: var(--navbar-color);
     color: var(--foundation-light);
   }
+
   
   @media (max-width: 768px) {
     .video-container {
@@ -89,6 +88,11 @@
       padding: 20px;
       margin-bottom: 80px;
       margin-top: -240px
+    }
+    .react-player {
+      min-height: 150px !important;
+      width: 95% !important;
+      max-height: 250px !important;
     }
     .container {
       flex-direction: column;

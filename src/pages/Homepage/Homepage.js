@@ -148,11 +148,6 @@ function Homepage() {
                         className="react-player"
                         light={true}
                         url='https://www.youtube.com/watch?v=yMJCcKyorfs&ab_channel=UliaArt'
-                        style={{
-                            minWidth:'80%',
-                            minHeight:'540px',
-                            borderRadius:240
-                        }}
                     />
                     {/* <img src={slide5} className="image-slide" /> */}
                 </div>

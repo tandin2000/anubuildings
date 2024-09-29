@@ -4,6 +4,7 @@
     background-color: var(--navbar-color);
     padding: 40px;
     gap: 32px;
+    justify-content: flex-start;
     /* justify-content: ; */
 
 }
@@ -52,6 +53,23 @@
     color: var(--foundation-light);
 }
 
+.footer-award-content{
+    width: 0;
+    z-index: 3;
+}
+
+.footer-award{
+    height: 150px;
+    width: 120px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.google-map-iframe{
+    height: 250px !important;
+    width: 640px   !important;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     .footer {
@@ -65,6 +83,22 @@
         flex-direction: column;
         gap: 24px;
     }
+    .footer-award{
+        height: 150px;
+        width: 120px;
+        margin-top: 340px;
+        margin-left: -10px;
+    }
+    .footer-award-content{
+        width: 0;
+        z-index: 3;
+        height: 0;
+    }
+    .google-map-iframe{
+        height: 250px !important;
+        width: 330px   !important;
+    }
+    
 
 
     

@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     background-color: var(--color-primary);
-    padding: 4px 36px ;
+    padding: 12px 36px ;
 
     border-radius: 16px;
     z-index: 3;
@@ -130,6 +130,7 @@
     position: relative;
     margin-left: 40px;
     margin-right: 40px;
+    gap: 16px;
 }
 
 .image-section-1{
@@ -277,7 +278,7 @@
         justify-content: center;
         align-items: center;
         background-color: var(--color-primary);
-        padding: 12px 36px ;
+        padding: 24px 36px ;
         border-radius: 16px;
         margin-top: -80px;
         z-index: 3;
