@@ -36,6 +36,7 @@ import frame18 from '../../images/Frame 18.png'
 import FAQSection from '../Component/FAQ';
 import Footer from '../Component/Footer';
 import ReactPlayer from 'react-player';
+import Testamonials from '../Component/Testamonials';
 
 const items = [
     {
@@ -295,6 +296,7 @@ function Homepage() {
                     </div>
                 </div>
             </div>
+            <Testamonials/>
             <div className='section-3'>
                 <div class="container-2">
                     <p class="text-large text-center mx-5" style={{ color: "black" }}>

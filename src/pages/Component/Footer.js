@@ -1,6 +1,9 @@
 import React from 'react'
 import './Footer.css'
 import AwardImg from "../../images/award.png"
+import { ReactGoogleReviews } from "react-google-reviews";
+import "react-google-reviews/dist/index.css";
+
 export default function Footer() {
   return (
     <div className='footer'>
