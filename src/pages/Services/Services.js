@@ -12,22 +12,24 @@ import service6 from '../../images/service6.png';
 import service7 from '../../images/service7.png';
 import service8 from '../../images/service8.png';
 import service9 from '../../images/service9.png';
+import beforeImage from '../../images/before.jpeg';
+import afterImage from '../../images/after.jpeg';
 
 const MasonryGrid = () => {
     const [modal, setModal] = useState(false);
     const [activeCard, setActiveCard] = useState(null); // State to track the active card
 
     const cards = [
-        { id: 1, image: service1, text: 'Condominiums Maintenance', description: 'Description for Condominiums Maintenance' },
-        { id: 2, image: service2, text: 'Apartments Cleaning', description: 'Description for Apartments Cleaning' },
-        { id: 3, image: service3, text: 'Commercial Buildings Cleaning', description: 'Description for Commercial Buildings Cleaning' },
-        { id: 4, image: service4, text: 'Retail Stores Cleaning', description: 'Description for Retail Stores Cleaning' },
-        { id: 5, image: service5, text: 'Residential Carpet Cleaning', description: 'Description for Residential Carpet Cleaning' },
-        { id: 6, image: service6, text: 'Steam Wash Carpet Cleaning', description: 'Description for Steam Wash Carpet Cleaning' },
-        { id: 7, image: service7, text: 'Stripping and Waxing Floors', description: 'Description for Stripping and Waxing Floors' },
-        { id: 8, image: service8, text: 'Underground Parking Lot Power Wash and Clean', description: 'Description for Underground Parking Lot Power Wash and Clean' },
-        { id: 9, image: service9, text: 'Janitorial Service and Maintenance', description: 'Description for Janitorial Service and Maintenance' },
+        { id: 1, image: service1, text: 'Condominiums Maintenance', description: 'Description for Condominiums Maintenance', icon: "bx bx-building" },
+        { id: 3, image: service3, text: 'Commercial Buildings Cleaning', description: 'Description for Commercial Buildings Cleaning', icon: "bx bx-briefcase" },
+        { id: 4, image: service4, text: 'Retail Stores Cleaning', description: 'Description for Retail Stores Cleaning', icon: "bx bx-store" },
+        { id: 5, image: service5, text: 'Residential Carpet Cleaning', description: 'Description for Residential Carpet Cleaning', icon: "bx bx-home" },
+        { id: 6, image: service6, text: 'Steam Wash Carpet Cleaning', description: 'Description for Steam Wash Carpet Cleaning', icon: "bx bx-water" },
+        { id: 7, image: service7, text: 'Stripping and Waxing Floors', description: 'Description for Stripping and Waxing Floors', icon: "bx bx-brush" },
+        { id: 8, image: service8, text: 'Underground Parking Lot Power Wash and Clean', description: 'Description for Underground Parking Lot Power Wash and Clean', icon: "bx bx-car" },
+        { id: 9, image: service9, text: 'Janitorial Service and Maintenance', description: 'Description for Janitorial Service and Maintenance', icon: "bx bx-mop" },
     ];
+    
 
     const toggleModal = () => setModal(!modal);
 
@@ -38,17 +40,17 @@ const MasonryGrid = () => {
 
     return (
         <>
-            <div className='section-2' style={{ marginTop: 60 }}>
-                <div className='header'>
-                    <div className='title'>
+            <div className='section-2'>
+                <div className='header new-service' style={{ display: 'flex', flexDirection: 'column', fontFamily: 'Sora' }}>
+                    <div className='title text-light'>
                         Our Cleaning <br /> Services
                     </div>
-                    <div className='content'>
+                    <div className='content text-light' style={{ paddingBottom: 120 }}>
                         Cleaning can be a chore and we know you have many choices when you consider hiring a maid service. Because of that, we are constantly thriving to improve.
                     </div>
                 </div>
             </div>
-            <div className="masonry-grid">
+            <div className="masonry-grid" style={{ marginTop: -100, marginBottom: 80 }}>
                 {cards.map(card => (
                     <Card
                         inverse
@@ -74,7 +76,10 @@ const MasonryGrid = () => {
                                 justifyContent: 'flex-end'  // Aligns content at the bottom
                             }}
                         >
-                            <CardTitle tag="h5">
+                            <div className='icon-container'>
+                                <i class={`${card.icon} bx-md`} ></i>
+                            </div>
+                            <CardTitle tag="h4">
                                 {card.text}
                             </CardTitle>
                         </CardImgOverlay>
@@ -92,16 +97,16 @@ const MasonryGrid = () => {
                         <>
                             <ReactCompareSlider
                                 style={{ width: '100%', height: 350, borderRadius: 8, objectFit: 'cover', objectPosition: 'top' }}
-                                itemOne={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
-                                itemTwo={<ReactCompareSliderImage src={activeCard.image} srcSet={activeCard.image} alt={activeCard.text} />}
+                                itemOne={<ReactCompareSliderImage src={beforeImage} srcSet={beforeImage} alt={activeCard.text} />}
+                                itemTwo={<ReactCompareSliderImage src={afterImage} srcSet={afterImage} alt={activeCard.text} />}
                             />
-                            <p className='mt-3' style={{ fontSize: 16, fontWeight: 800 }}>{activeCard?.text}</p>
-                            <p style={{ marginTop: 10 }}>{activeCard.description}</p>
+                            <h2 className='mt-3' style={{ fontSize: 24, fontWeight: 800, textAlign:'center' }}>{activeCard?.text}</h2>
+                            <p style={{ marginTop: 10, textAlign:'center' }}>{activeCard.description}</p>
                         </>
                     )}
                 </ModalBody>
                 <ModalFooter>
-                    <Button color="primary" outline className="primary-btn" style={{ margin: '0 auto' }}>
+                    <Button color="primary" outline className="light-btn py-3 px-5" style={{ margin: '0 auto' }}>
                         Book Now <i class='bx bx-right-arrow-alt' ></i>
                     </Button>
                 </ModalFooter>

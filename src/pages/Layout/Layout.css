@@ -21,14 +21,14 @@
 
 /* Navbar styles */
 .nav-bar-wrapper {
-    background-color: var(--foundation-red-light);
-    border-radius: 160px;
-    padding: 0 16px;
-    position: fixed;
-    top: 42px;
-    width: calc(100% - 32px);
+    background-color: var(--navbar-color);
+    color: var(--foundation-light);
+    /* border-radius: 160px; */
+    padding: 0 64px;
+    position: sticky;
+    top: 0px;
+    /* width: calc(100% - 32px); */
     z-index: 1000; /* Keep the navbar on top of the carousel */
-    margin: 16px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
@@ -70,19 +70,6 @@
 
 
 
-/* Text overlay */
-.carousel-overlay {
-    position: absolute;
-    bottom: 20%;
-    left: 40px;
-    text-align: left;
-}
-
-
-.carousel-overlay p {
-    font-weight: 400;
-    font-size: 64px;
-}
 
 .carousel-overlay span {
     color: var(--color-accent); /* Highlight 'Award Winning' in accent color */
@@ -149,10 +136,10 @@
 /* Responsive design */
 @media (max-width: 768px) {
     .nav-bar-wrapper {
-        border-radius: 20px;
+        /* border-radius: 20px; */
         padding: 0;
-        width: calc(100% - 32px);
-        margin: 16px;
+        /* width: calc(100% - 32px); */
+        /* margin: 16px; */
     }
     .nav-center{
         margin-left: unset;
@@ -182,10 +169,6 @@
         margin-top: auto;
         padding-bottom: 2rem;
         text-align: center;
-    }
-
-    .contact-number {
-        margin-bottom: 1rem;
     }
 
     .primary-btn {

@@ -28,12 +28,28 @@ body {
   border-color: var(--color-primary);
 }
 
+.light-btn{
+  background-color: var(--foundation-light);
+  color: var(--navbar-color);
+  border-color: var(--navbar-color);
+  border-radius: 32px;
+}
+
+.light-btn:hover{
+  background-color: var(--navbar-color);
+  border-color: var(--foundation-light);
+  color: var(--foundation-light) !important;
+}
+
 .carousel-indicators {
   display: none !important;
 }
 
 .card-img-overlay{
-  background: linear-gradient(177deg, rgba(253,29,29,0) 43%, rgba(18,18,18,1) 100%);
+  background: linear-gradient(to top, #121212, transparent);
+}
+.card-img-overlay:hover{
+  background: linear-gradient(to top, #040D43, transparent);
 }
 
 .modal-header{
@@ -60,10 +76,14 @@ body {
 
 /* Custom CSS to change active nav item text color to red */
 .nav-link.active {
-  color: var(--color-primary)!important; 
+  color: var(--foundation-light)!important; 
 }
 
 /* Optional: Add hover effect */
 .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--foundation-light);
+}
+
+.nav-link{
+  color: var(--foundation-light);
 }

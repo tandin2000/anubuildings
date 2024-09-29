@@ -78,9 +78,9 @@ function Layout() {
                             </NavItem>
                         </Nav>
                         <div className="bottom-items">
-                            <NavbarText className="contact-number mx-3">(647) 773-4356</NavbarText>
+                            <NavbarText className="contact-number mx-3 text-light">(647) 773-4356</NavbarText>
                             <NavbarText>
-                                <Button color="primary" outline className="primary-btn" tag={Link} to="/get-quote">
+                                <Button outline className="light-btn" tag={Link} to="/get-quote">
                                     Get Quote
                                 </Button>
                             </NavbarText>
