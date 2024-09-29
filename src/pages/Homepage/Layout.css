@@ -53,7 +53,7 @@
     border: none; /* Remove border */
     outline: none; /* Remove outline */
     cursor: pointer; /* Change cursor to pointer */
-    color: var(--color-primary); /* Change color of the icon to match your theme */
+    color: var(--foundation-light); /* Change color of the icon to match your theme */
 }
 
 .custom-toggler .bx {
