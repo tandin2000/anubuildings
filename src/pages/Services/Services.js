@@ -38,7 +38,7 @@ const MasonryGrid = () => {
 
     return (
         <>
-            <div className='section-2' style={{ marginTop: 150 }}>
+            <div className='section-2' style={{ marginTop: 60 }}>
                 <div className='header'>
                     <div className='title'>
                         Our Cleaning <br /> Services
