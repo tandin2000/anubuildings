@@ -57,7 +57,8 @@ function FAQSection() {
                             fontWeight: 'bold',
                             display: 'flex',
                             justifyContent: 'space-between',
-                            alignItems: 'center'
+                            alignItems: 'center',
+                            textAlign:'left'
                         }}
                     >
                         {faq.question}
