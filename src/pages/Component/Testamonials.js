@@ -46,8 +46,10 @@ const buttonStyle = {
 
 const imageStyle = {
     borderRadius: '20px',
-    height: '280px',
+    height: 'auto',           // This will allow the image to scale proportionally
     width: '100%',
-    objectFit: 'cover',
-    transition: 'transform 0.5s ease-in-out'
+    maxWidth: '300px',         // Ensures it doesn't get too large on wider screens
+    objectFit: 'cover',        // Keeps the image filling the area while maintaining its aspect ratio
+    transition: 'transform 0.5s ease-in-out',
 };
+

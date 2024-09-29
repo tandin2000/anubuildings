@@ -123,6 +123,7 @@
     align-items: center;
     background-color: var(--color-primary);
     padding: 4px 36px ;
+
     border-radius: 16px;
     z-index: 3;
     margin-top: 50px;
@@ -276,7 +277,7 @@
         justify-content: center;
         align-items: center;
         background-color: var(--color-primary);
-        padding: 4px 36px ;
+        padding: 12px 36px ;
         border-radius: 16px;
         margin-top: -80px;
         z-index: 3;
