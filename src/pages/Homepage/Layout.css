@@ -31,7 +31,8 @@
 
 .hero-container{
     background: url("../../images/background.png");
-    min-height: 80svh;
+    /* min-height: 80svh; */
+    padding-bottom: 240px;
 }
 
 /* Carousel */

@@ -43,7 +43,7 @@ const MasonryGrid = () => {
             <div className='section-2'>
                 <div className='header new-service' style={{ display: 'flex', flexDirection: 'column', fontFamily: 'Sora' }}>
                     <div class="container-2">
-                        <p class="text-large mx-5">
+                        <p class="text-large text-center mx-5">
                             Our Cleaning <br /> Services
                         </p>
                         <div class="text-small">

@@ -165,7 +165,7 @@ function Homepage() {
             </div>
             <div className='section-2'>
                 <div class="container-2">
-                    <p class="text-large mx-5" style={{ color: "black" }}>
+                    <p class="text-large text-center mx-5" style={{ color: "black" }}>
                         Our Cleaning Services
                     </p>
                     <div class="text-small" style={{ color: "black" }}>
@@ -297,7 +297,7 @@ function Homepage() {
             </div>
             <div className='section-3'>
                 <div class="container-2">
-                    <p class="text-large mx-5" style={{ color: "black" }}>
+                    <p class="text-large text-center mx-5" style={{ color: "black" }}>
                         FAQs
 
                     </p>
